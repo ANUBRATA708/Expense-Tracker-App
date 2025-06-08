@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Expense Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Monthly Spending Dashboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Category</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in summary %}
+                <tr>
+                    <td>{{ item.month }}</td>
+                    <td>{{ item.emoji }} {{ item.category }}</td>
+                    <td>₹{{ '%.2f'|format(item.amount) }}</td>
+                </tr>
+                {% else %}
+                <tr><td colspan="3">No data to display.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('index') }}" class="dashboard-link">← Back to Expense List</a>
+    </div>
+</body>
+</html>

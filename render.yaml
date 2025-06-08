@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: expense-tracker-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn main:app

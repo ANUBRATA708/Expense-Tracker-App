@@ -6,7 +6,6 @@ A simple and smart Flask-based web app to track daily expenses with automatic ca
 - 📥 Add daily expenses with description and date.
 - 🧠 Auto-categorizes expenses (e.g., food, travel, bills).
 - 📊 Monthly dashboard summary with category breakdown.
-- 🔄 Option to clear all data.
 - 💻 Runs locally — no command-line needed!
 
 ## 🛠️ Installation

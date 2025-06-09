@@ -2,17 +2,19 @@ from flask import Flask, render_template, request, redirect, url_for
 from models import db, Expense
 from datetime import datetime
 from collections import defaultdict
+import webbrowser
+import threading
+import time
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///expenses.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
-# ✅ Safely create DB tables without decorators
+# ✅ Create DB tables
 with app.app_context():
     db.create_all()
 
-# Emoji for categories
 CATEGORY_EMOJI = {
     'Food': '🍔',
     'Transport': '🚗',
@@ -22,7 +24,6 @@ CATEGORY_EMOJI = {
     'Other': '🛒'
 }
 
-# Keywords for auto-categorization
 KEYWORD_CATEGORY = {
     'food': 'Food',
     'restaurant': 'Food',
@@ -36,7 +37,6 @@ KEYWORD_CATEGORY = {
     'medicine': 'Health'
 }
 
-# Auto-categorize based on description
 def categorize(description):
     desc = description.lower()
     for keyword, category in KEYWORD_CATEGORY.items():
@@ -63,7 +63,6 @@ def index():
             db.session.add(new_expense)
             db.session.commit()
             return redirect(url_for('index'))
-
         except Exception as e:
             return f"Error occurred: {e}"
 
@@ -92,5 +91,14 @@ def dashboard():
 
     return render_template('dashboard.html', summary=summary_list)
 
+# ✅ Auto-open browser when app starts
+def open_browser():
+    time.sleep(1)
+    webbrowser.open("http://127.0.0.1:10000/")
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    threading.Thread(target=open_browser).start()
+    app.run(host='127.0.0.1', port=10000)
+
+            
+       

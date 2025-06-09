@@ -13,7 +13,7 @@ A simple and smart Flask-based web app to track daily expenses with automatic ca
 1. Download all the files provided.
 2. Install Python 3.10+.
 3. Run `run_app.bat` (no need to use command line).
-4. Go to `http://localhost:5000` in your browser.
+4. The app automatically runs in your default browser.
 
 ## 📁 Folder Structure
 ExpenseTrackerApp/
@@ -26,5 +26,6 @@ ExpenseTrackerApp/
 ├── run_app.bat
 ├── requirements.txt
 └── README.md
+![image](https://github.com/user-attachments/assets/821acf11-86c1-4210-9aa6-9a841ef8a842)
 
 

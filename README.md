@@ -17,14 +17,23 @@ A simple and smart Flask-based web app to track daily expenses with automatic ca
 
 ## 📁 Folder Structure
 ExpenseTrackerApp/
+
 ├── main.py
+
 ├── models.py
+
 ├── templates/
+
 │ ├── index.html
+
 │ └── dashboard.html
+
 ├── static/
+
 ├── run_app.bat
+
 ├── requirements.txt
+
 └── README.md
 ![image](https://github.com/user-attachments/assets/821acf11-86c1-4210-9aa6-9a841ef8a842)
 

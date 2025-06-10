@@ -24,11 +24,13 @@ ExpenseTrackerApp/
 
 ├── templates/
 
-│ ├── index.html
+  ├── index.html
 
-│ └── dashboard.html
+  └── dashboard.html
 
 ├── static/
+
+  └── style.css
 
 ├── run_app.bat
 

@@ -1,42 +1,106 @@
-# 💸 Expense Tracker App
+<h1 align="center">💸 Expense Tracker App</h1>
+<p align="center">
+  A simple and smart Flask-based web app to track daily expenses with automatic categorization and beautiful dashboards.
+</p>
 
-A simple and smart Flask-based web app to track daily expenses with automatic categorization and beautiful dashboards.
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20With-Flask-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/UI-Dashboard%20Summary-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge"/>
+</p>
+
+---
 
 ## 🚀 Features
-- 📥 Add daily expenses with description and date.
-- 🧠 Auto-categorizes expenses (e.g., food, travel, bills).
-- 📊 Monthly dashboard summary with category breakdown.
-- 💻 Runs locally — no command-line needed!
 
-## 🛠️ Installation
+- 📥 Add daily expenses with description, category, and date  
+- 🧠 Automatically categorizes expenses (e.g., food, travel, bills)  
+- 📊 Dashboard showing monthly summary and pie chart breakdown  
+- 💻 Zero command-line hassle — runs via double-click `.bat`  
+- 🧼 Clean and modern UI with Bootstrap & CSS
 
-1. Download all the files provided.
-2. Install Python 3.10+.
-3. Run `run_app.bat` (no need to use command line).
-4. The app automatically runs in your default browser.
+---
 
-## 📁 Folder Structure
+## 🛠️ Installation Guide
+
+1. 📦 **Download or clone** the repository
+2. 🐍 **Install Python 3.10+**  
+3. 📁 Install dependencies:
+   ```bash
+   <h1 align="center">💸 Expense Tracker App</h1>
+<p align="center">
+  A simple and smart Flask-based web app to track daily expenses with automatic categorization and beautiful dashboards.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20With-Flask-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/UI-Dashboard%20Summary-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge"/>
+</p>
+
+---
+
+## 🚀 Features
+
+- 📥 Add daily expenses with description, category, and date  
+- 🧠 Automatically categorizes expenses (e.g., food, travel, bills)  
+- 📊 Dashboard showing monthly summary and pie chart breakdown  
+- 💻 Zero command-line hassle — runs via double-click `.bat`  
+- 🧼 Clean and modern UI with Bootstrap & CSS
+
+---
+
+## 🛠️ Installation Guide
+
+1. 📦 **Download or clone** the repository
+2. 🐍 **Install Python 3.10+**  
+3. 📁 Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+## 🚀 Run the app:
+
+Simply double-click run_app.bat
+
+🌐 App opens automatically in your default browser
+
 ExpenseTrackerApp/
 
-├── main.py
+├── main.py                 # Flask app entry point
 
-├── models.py
+├── models.py               # Expense DB models & logic
 
-├── templates/
+├── run_app.bat             # One-click launcher (Windows)
 
-  ├── index.html
+├── requirements.txt        # Python dependencies
 
-  └── dashboard.html
+├── templates/              # HTML templates
 
-├── static/
+│   ├── index.html
 
-  └── style.css
+│   └── dashboard.html
 
-├── run_app.bat
+├── static/                 # CSS and static files
 
-├── requirements.txt
+│   └── style.css
 
-└── README.md
+└── README.md               # Project documentation
+
+📸 Coming Soon
+
 ![image](https://github.com/user-attachments/assets/821acf11-86c1-4210-9aa6-9a841ef8a842)
+
+## 🧠 Built With
+Python
+
+Flask
+
+SQLite
+
+HTML/CSS/Bootstrap
+
+Jinja2 Templating
+
+## 👨‍💻 Author
+Anubrata Majumdar
 
 
